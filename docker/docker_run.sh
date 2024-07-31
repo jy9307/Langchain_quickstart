@@ -1,0 +1,1 @@
+docker run -d --name langchain --env-file .env -p 8000:8000 langchain:quickstart
