@@ -10,3 +10,5 @@ llm = ChatOpenAI(
     model = 'gpt-4o-mini',
     temperature=0
 )
+
+#llm = llm.bind_tools(tools=tools)

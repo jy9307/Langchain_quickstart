@@ -1,4 +1,4 @@
-langenv/
+env/
 __pycache__/
 .env
 .cache
