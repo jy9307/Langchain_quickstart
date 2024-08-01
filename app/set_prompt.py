@@ -1,5 +1,5 @@
 from langchain_core.output_parsers import StrOutputParser
-from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 
 # 프롬프트 설정
 prompt = ChatPromptTemplate.from_messages(
@@ -32,5 +32,5 @@ rag_prompt = ChatPromptTemplate.from_messages(
 agent_prompt = ChatPromptTemplate.from_messages([
     ("system", "you are mathematics. answer the question"),
     ("human", "{question}"),
-    ("placeholder", "{agent_scratchpad}")
+    MessagesPlaceholder(variable_name="agent_scratchpad"),
 ])
