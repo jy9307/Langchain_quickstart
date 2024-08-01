@@ -11,6 +11,6 @@ COPY requirements.txt /langchain_quickstart/requirements.txt
 RUN pip install -r requirements.txt
 RUN rm -r requirements.txt
 
-EXPOSE 8501
+EXPOSE 8000
 
-CMD uvicorn app.server:app --host 0.0.0.0 --port 8501
+CMD uvicorn app.server:app --host 0.0.0.0 --port 8000
