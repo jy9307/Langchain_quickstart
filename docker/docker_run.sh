@@ -1,1 +1,1 @@
-docker run -d --name langchain -p 8501:8501 langchain:quickstart
+docker run -d --name langchain -p 8000:8000 langchain:quickstart
